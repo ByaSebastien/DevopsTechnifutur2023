@@ -17,48 +17,30 @@ namespace Devops.Demo
             int taille = int.Parse(Console.ReadLine());
             int[] tab1 = new int[taille];
             int[,] tab2 = new int[taille, taille];
-            tab1 = FillTab(tab1);
-            tab2 = FillTab(tab2);
-            ShowTab(tab1); 
-            ShowTab(tab2);
+            FillTab(tab1);
+            ShowTab(tab1);
+            tab1[2] = 5;
+            ShowTab(tab1);
+            tab1[6] = 8;
+            ShowTab(tab1);
+            tab1[0] = 20;
+            ShowTab(tab1);
         }
-        public int[,] FillTab(int[,] tab)
+
+        private void FillTab(int[] tab1)
         {
             int cpt = 1;
-            for (int i = 0; i < tab.GetLength(0); i++)
+            for (int i = 0; i < tab1.Length; i++)
             {
-                for (int j = 0; j < tab.GetLength(1); j++)
-                {
-                    tab[i, j] = cpt++;
-                }
-            }
-            return tab;
-        }
-        public int[] FillTab(int[] tab)
-        {
-            int cpt = 1;
-            for (int i = 0; i < tab.GetLength(0); i++)
-            {
-                tab[i] = cpt++;
-            }
-            return tab;
-        }
-        public void ShowTab(int[,] tab)
-        {
-            for (int i = 0; i < tab.GetLength(0); i++)
-            {
-                for (int j = 0; j < tab.GetLength(1); j++)
-                {
-                    Console.Write(tab[i, j] + " ");
-                }
-                Console.WriteLine();
+                tab1[i] = cpt++;
             }
         }
-        public void ShowTab(int[] tab)
+
+        private static void ShowTab(int[] tab1)
         {
-            for (int i = 0; i < tab.GetLength(0); i++)
+            for (int i = 0; i < tab1.Length; i++)
             {
-                Console.Write(tab[i] + " ");
+                Console.Write(tab1[i] + " | ");
             }
             Console.WriteLine();
         }

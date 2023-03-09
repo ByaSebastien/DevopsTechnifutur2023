@@ -22,13 +22,14 @@ namespace Devops.Demo
             Console.WriteLine("____________________");
             pikachu.Parle();
             pikachu.Info();
+            ratata.Attaque(pikachu);
+            pikachu.Info();
             ratata.Parle();
             ratata.Info();
             ratata.Stat.Pv -= (pikachu.Stat.Atk - ratata.Stat.Def) <= 0 ? 1 : pikachu.Stat.Atk - ratata.Stat.Def;
             ratata.aMal();
             Console.WriteLine("____________________");
             Console.WriteLine(ratata.Stat.Pv);
-
         }
     }
     public struct Pokemon
@@ -47,7 +48,10 @@ namespace Devops.Demo
         {
             Console.WriteLine($"{Name} {Name}");
         }
-
+        public void Attaque(Pokemon p)
+        {
+            p.Stat.Pv -= 10;
+        }
         public void aMal()
         {
             Console.WriteLine(Name.Substring(0,2) + "...");

@@ -1,6 +1,7 @@
 ﻿using Devops.Exercices.Boucles;
 using Devops.Exercices.Collections;
 using Devops.Exercices.Conditions;
+using Devops.Exercices.Structures;
 using Devops.Exercices.Variables;
 using Logique;
 
@@ -24,6 +25,7 @@ ICommand[] exercices = new ICommand[]
     new NbPremierCollectionGenerique(),
     new DeplacementTableau2D(),
     new DeplacementAlternatif(),
+    new DiagonalePoint(),
 };
 
 do
