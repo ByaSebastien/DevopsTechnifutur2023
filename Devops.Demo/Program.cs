@@ -16,6 +16,7 @@ ICommand[] exercices = new ICommand[]
     new DemoCollectionsGeneriques(),
     new DemoMethodes(),
     new DemoStructure(),
+    new DemoEnums(),
 };
 
 do
