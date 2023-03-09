@@ -1,6 +1,7 @@
 ﻿using Devops.Exercices.Boucles;
 using Devops.Exercices.Collections;
 using Devops.Exercices.Conditions;
+using Devops.Exercices.Methodes;
 using Devops.Exercices.Structures;
 using Devops.Exercices.Variables;
 using Logique;
@@ -26,6 +27,8 @@ ICommand[] exercices = new ICommand[]
     new DeplacementTableau2D(),
     new DeplacementAlternatif(),
     new DiagonalePoint(),
+    new Temperature(),
+    new Equation(),
 };
 
 do

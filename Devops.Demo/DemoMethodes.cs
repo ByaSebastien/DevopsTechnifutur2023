@@ -30,7 +30,9 @@ namespace Devops.Demo
             Console.WriteLine("_____________________________________________");
             ChangeValue(tab1);
             ShowTab(tab1);
+            Console.WriteLine("_____________________________________________");
             Console.WriteLine(Addition(2, 6, 5, 7, 8, 9, 7));
+            Console.WriteLine("_____________________________________________");
             Console.WriteLine(estDivisible(5));
             Console.WriteLine(estDivisible(6, 3));
         }
