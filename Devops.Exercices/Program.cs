@@ -1,6 +1,7 @@
 ﻿using Devops.Exercices.Boucles;
 using Devops.Exercices.Collections;
 using Devops.Exercices.Conditions;
+using Devops.Exercices.Enums;
 using Devops.Exercices.Methodes;
 using Devops.Exercices.Structures;
 using Devops.Exercices.Variables;
@@ -29,6 +30,7 @@ ICommand[] exercices = new ICommand[]
     new DiagonalePoint(),
     new Temperature(),
     new Equation(),
+    new JeuDeCarte(),
 };
 
 do
